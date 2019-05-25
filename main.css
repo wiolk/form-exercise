@@ -1,0 +1,59 @@
+
+.avatars {
+    display: inline-block;
+   
+}
+
+img {
+    object-fit: contain;
+    height: 120px;
+    width: 120px;
+}
+
+.box {
+    text-align: center;
+    padding: 30px;
+    margin-left: 200px;
+    border: 1px solid #000; 
+    border-radius: 25px;
+    width: 50%;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif; 
+}
+
+input[type="text"],
+input[type="date"] {
+    background-color: rgba(185, 177, 219, 0.445);  
+    border: 1px solid grey;
+    margin: 5px;
+    padding; 20px;
+    
+}
+
+.buttons {
+    display: inline-block;
+} 
+
+#reset {
+    width: 100px;
+    height: 30px;
+    font-size: 16px;
+    color: white;
+    border: none;
+    text-transform: uppercase;
+    background-color: grey;
+    margin-right: 20px;
+}
+
+#submit {
+    width: 100px;
+    height: 30px;
+    font-size: 16px;
+    color: white;
+    border: none;
+    text-transform: uppercase;
+    background-color: #009999;
+    
+}
+
+
+
