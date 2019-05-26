@@ -11,9 +11,8 @@
     </head>
 
     <body>
-
         <div class="box">
-             <form> 
+             <form name="myForm"> 
                  <label for="firstName">Imię: <br></label>
                  <input type="text" id="firstName" name="firstName"><br><br>
 
@@ -28,37 +27,38 @@
 
                 
                      <p>Wybierz swój avatar:<br></p>
-                 
-                 <div class="avatars">
-                    <input type="radio" id="avatar1" name="avatar1">
-                    <p><img src="https://wamu.org/wp-content/uploads/2017/05/unimpressed-cat-900x599.jpg"><br></p>
-                    <label for="avatar1"><br>
-                    </label>
-                </div>
-                <div class="avatars">
-                    
-                    <input type="radio" id="avatar2" name="avatar2">
-                    <p><img src="https://media.firebox.com/product/8761/s21434_column_grid_2/cat-face-towels-brown-and-white_33042.jpg"></p>
-                    <label for="avatar2"><br>  
-                    </label>
-                </div>
-                <div class="avatars">
-                    <input type="radio" id="avatar3" name="avatar3">
-                    <p><img src="https://www.rd.com/wp-content/uploads/2018/06/The-cat-hides-in-the-box-white-background-close-up-150x150.jpg"><br></p>
-                    <label for="avatar3"><br>
-                    </label>
-                </div>
-                    <br>
-                    <div class="buttons">
-                        <button type="button" id="reset">RESET</button>
-                     </div>  
-                    <div class="buttons">
-                        <button type="button" id="submit">SUBMIT</button>
+                 <div id="avatar">
+                    <div class="avatars">
+                        <input type="radio" class="kittens" id="avatar1" name="avatar">
+                        <p><img src="https://wamu.org/wp-content/uploads/2017/05/unimpressed-cat-900x599.jpg"><br></p>
+                        <label for="avatar1"><br>
+                        </label>
                     </div>
-                
+                    <div class="avatars">
+                        
+                        <input type="radio" class="kittens" id="avatar2" name="avatar">
+                        <p><img src="https://media.firebox.com/product/8761/s21434_column_grid_2/cat-face-towels-brown-and-white_33042.jpg"></p>
+                        <label for="avatar2"><br>  
+                        </label>
+                    </div>
+                    <div class="avatars">
+                        <input type="radio" class="kittens" id="avatar3" name="avatar">
+                        <p><img src="https://www.rd.com/wp-content/uploads/2018/06/The-cat-hides-in-the-box-white-background-close-up-150x150.jpg"><br></p>
+                        <label for="avatar3"><br>
+                        </label>
+                    </div>
+                        <br>
+                        <div class="buttons">
+                            <button type="button" id="reset" onclick="resetForm()">RESET</button>
+                        </div>  
+                        <div class="buttons">
+                            <button type="button" id="submit" onClick="submitForm()">SUBMIT</button>
+                        </div>
+                </div>
             </form>
         </div>
-
+        
+        <script src="form.js"></script>
     </body>
 
 </html>
